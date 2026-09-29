@@ -72,7 +72,7 @@ void testEmptyList() {
   const initialBalance = 50000.0;
   final now = DateTime(2024, 6, 30);
   final transactions = <Transaction>[]; 
-
+//fv
   final balance = RunwayCalculator.calculateBalance(
     initialBalance: initialBalance,
     transactions: transactions,
