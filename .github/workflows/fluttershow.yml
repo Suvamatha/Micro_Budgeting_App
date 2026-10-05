@@ -39,6 +39,10 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          # Creates the Pages site on the first run, so the developer does not
+          # need to visit Repository Settings → Pages manually.
+          enablement: true
 
       - name: Build for web
         run: flutter build web --release --base-href /Micro_Budgeting_App/
